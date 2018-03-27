@@ -90,5 +90,12 @@ header p {
     background: radial-gradient(rgba(255,255,255, 0.6) 0%, rgba(150,150,150, 0.4) 150%),
                 radial-gradient(#aaa 10%, #fff 100%) repeat;
     background-size: 10px 10px;
+    display: flex;
+    flex-wrap: wrap;
 }
 
+.pixel {
+    flex-basis: 2%;
+    background: #212121;
+
+}

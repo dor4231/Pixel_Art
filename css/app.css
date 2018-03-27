@@ -52,11 +52,41 @@ header p {
     height: 70%;
     display: flex;
     flex-wrap: wrap;
+    flex-flow: column;
     margin: 0 auto;
 }
 
+.app-controls {
+    flex-basis: 10%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.app-controls div {
+    padding: 10px 15px
+}
+
+.app-controls input[type=number] {
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    margin-left: 10px;
+}
+
+.app-controls button {
+    padding: 10px;
+    background: #60dd97;
+    border-radius: 10px;
+}
+
+.app-controls input[type=color] {
+    border: none;
+    border-radius: 10px;
+    padding: 0;
+}
+
 .canvas {
-    flex-basis: 100%;
+    flex-basis: 90%;
     background: radial-gradient(rgba(255,255,255, 0.6) 0%, rgba(150,150,150, 0.4) 150%),
                 radial-gradient(#aaa 10%, #fff 100%) repeat;
     background-size: 10px 10px;

@@ -59,6 +59,8 @@ header p {
     flex-basis: 10%;
     display: flex;
     justify-content: space-between;
+    background: rgba(40,40,40, 0.6);
+    border-radius: 10px 10px 0 0;
 }
 
 .app-controls div {

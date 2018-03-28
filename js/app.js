@@ -1,20 +1,32 @@
 document.addEventListener("DOMContentLoaded", function () {
     const reset_button = document.querySelector(".app-controls button");
     const canvas = document.querySelector(".canvas");
+    const colorPicker = document.querySelector(".app-controls input[type=color]");
+    const appStyle = document.styleSheets[0];
 
     let mouseDown = false;
-    let selectedColor = "#a00";
+    let selectedColor = colorPicker.value;
+    let canvasWidth = document.getElementById("widht");
+    let canvasHeight = document.getElementById("height");
     const pageInit = function () {
 
+        for (const rule of appStyle){
+            if (rule.selectorText === ".pixel") {
+                rule.style["flex-basis"] = ;
+            }
+
+        }
+
     };
-
-
-
 
 
     ///////////////////
     // Event Listeners:
     ///////////////////
+
+    colorPicker.addEventListener("blur", function() {
+        selectedColor = colorPicker.value;
+    });
 
     canvas.addEventListener("mousedown",function(event){
         if (event.target.nodeName === "DIV") {

@@ -40,11 +40,12 @@ document.addEventListener("DOMContentLoaded", function () {
         const width = document.getElementById("width").value;
 
         const numOfPixels = height * width;
-
+        canvas.innerHTML = "";
         for (let i = 0; i < numOfPixels; i++) {
             const div = document.createElement("div");
             div.classList.add("pixel");
-            document.querySelector(".canvas").appendChild(div);
+            canvas.appendChild(div);
         }
+
     })
 });

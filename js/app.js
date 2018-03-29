@@ -6,13 +6,17 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let mouseDown = false;
     let selectedColor = colorPicker.value;
-    let canvasWidth = document.getElementById("widht");
-    let canvasHeight = document.getElementById("height");
+    let canvasWidth = document.getElementById("width");
+    // let canvasHeight = document.getElementById("height");
+
+
     const pageInit = function () {
 
-        for (const rule of appStyle){
+        for (const rule of appStyle.cssRules){
             if (rule.selectorText === ".pixel") {
-                rule.style["flex-basis"] = ;
+                console.log(rule.style["flex-basis"]);
+                rule.style.flexBasis = (100 * (1/canvasWidth.value)).toString() + "%";
+                console.log((100 * (1/canvasWidth.value)).toString() + "%");
             }
 
         }
@@ -58,6 +62,6 @@ document.addEventListener("DOMContentLoaded", function () {
             div.classList.add("pixel");
             canvas.appendChild(div);
         }
-
+        pageInit();
     })
 });

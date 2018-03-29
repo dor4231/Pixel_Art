@@ -59,8 +59,14 @@ header p {
     flex-basis: 10%;
     display: flex;
     justify-content: space-between;
+    align-items: center;
     background: rgba(40,40,40, 0.6);
     border-radius: 10px 10px 0 0;
+    color: #c4c4c4;
+}
+
+.app-controls label {
+    margin-right: 10px;
 }
 
 .app-controls div {
@@ -71,13 +77,14 @@ header p {
     padding: 10px;
     border-radius: 10px;
     border: none;
-    margin-left: 10px;
 }
 
 .app-controls button {
-    padding: 10px;
+    padding: 20px 15px;
     background: #60dd97;
     border-radius: 10px;
+    color: #fff;
+    border: none;
 }
 
 .app-controls input[type=color] {
